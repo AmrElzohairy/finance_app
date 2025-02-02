@@ -1,6 +1,7 @@
 import 'package:finance_app/core/themes/app_assets.dart';
 import 'package:finance_app/core/widgets/back_button.dart';
 import 'package:finance_app/core/widgets/spacing.dart';
+import 'package:finance_app/feature/otp/ui/otp_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../core/widgets/custom_text_field.dart';
@@ -56,7 +57,12 @@ class LoginView extends StatelessWidget {
                 ),
               ),
               HeightSpace(15),
-              PrimayButtonWidget(onPress: () {}, buttonText: 'Login'),
+              PrimayButtonWidget(
+                onPress: () {
+                  Navigator.pushNamed(context, OtpView.routeName);
+                },
+                buttonText: 'Login',
+              ),
               HeightSpace(15),
               OrLoginWith(),
               HeightSpace(22),
@@ -101,7 +107,6 @@ class LoginView extends StatelessWidget {
                   Spacer(),
                   InkWell(
                     onTap: () {},
-
                     child: Container(
                       height: 56,
                       width: 105,
