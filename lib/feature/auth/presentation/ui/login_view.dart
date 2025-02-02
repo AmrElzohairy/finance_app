@@ -88,7 +88,6 @@ class LoginView extends StatelessWidget {
                   Spacer(),
                   InkWell(
                     onTap: () {},
-
                     child: Container(
                       height: 56,
                       width: 105,

@@ -1,3 +1,4 @@
+import 'package:finance_app/feature/main/main_view.dart';
 import 'package:finance_app/feature/otp/ui/widgets/custom_pin_code_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -53,7 +54,12 @@ class _OtpViewState extends State<OtpView> {
                 const HeightSpace(32),
                 CustomPinCodeField(pinCodeController: pinCodeController),
                 const HeightSpace(38),
-                PrimayButtonWidget(buttonText: "Verify", onPress: () {}),
+                PrimayButtonWidget(
+                  buttonText: "Verify",
+                  onPress: () {
+                    Navigator.pushNamed(context, MainView.routeName);
+                  },
+                ),
                 const Spacer(),
                 Center(
                   child: RichText(
@@ -80,4 +86,3 @@ class _OtpViewState extends State<OtpView> {
     );
   }
 }
-
