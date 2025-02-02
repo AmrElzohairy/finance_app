@@ -1,4 +1,4 @@
-import 'package:finance_app/feature/main/main_view.dart';
+import 'package:finance_app/feature/main_screens/main_view.dart';
 import 'package:finance_app/feature/otp/ui/widgets/custom_pin_code_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

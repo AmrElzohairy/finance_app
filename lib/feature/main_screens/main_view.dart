@@ -1,4 +1,5 @@
 import 'package:finance_app/core/themes/app_colors.dart';
+import 'package:finance_app/feature/home/ui/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,7 +14,7 @@ class MainView extends StatefulWidget {
 class _MainViewState extends State<MainView> {
   int _index = 0;
   List<Widget> screens = [
-    Container(color: Colors.red),
+    HomeView(),
     Container(color: Colors.green),
     Container(color: Colors.yellow),
     Container(color: Colors.purple),
