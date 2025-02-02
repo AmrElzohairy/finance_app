@@ -6,6 +6,8 @@ import 'package:finance_app/core/widgets/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../auth/presentation/ui/login_view.dart';
+
 class OnboardingView extends StatelessWidget {
   const OnboardingView({super.key});
   static const routeName = 'onboarding';
@@ -21,7 +23,9 @@ class OnboardingView extends StatelessWidget {
             fit: BoxFit.fill,
           ),
           HeightSpace(20),
-          PrimayButtonWidget(onPress: () {}, buttonText: "Login"),
+          PrimayButtonWidget(onPress: () {
+            Navigator.pushNamed(context, LoginView.routeName);  
+          }, buttonText: "Login"),
           HeightSpace(20),
           PrimayOutlinedButtonWidget(onPress: () {}, buttonText: "Register"),
           HeightSpace(46),

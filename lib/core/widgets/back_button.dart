@@ -1,8 +1,6 @@
-
 import 'package:finance_app/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 
 class BackButtonWidget extends StatelessWidget {
   const BackButtonWidget({super.key});
@@ -25,7 +23,8 @@ class BackButtonWidget extends StatelessWidget {
               Navigator.of(context).pop();
             },
             child: Icon(
-              Icons.arrow_back,
+              Icons.arrow_back_ios_new,
+              size: 20.sp,
               color: AppColors.primaryColor,
             ),
           ),

@@ -17,9 +17,10 @@ class FinanceApp extends StatelessWidget {
       designSize: const Size(375, 812),
       builder: (context, child) {
         return MaterialApp(
-          title: 'Flutter Demo',
+          title: 'finance app',
           onGenerateRoute: onGenerateRoute,
           initialRoute: OnboardingView.routeName,
+          debugShowCheckedModeBanner: false,
           home: child,
         );
       },
