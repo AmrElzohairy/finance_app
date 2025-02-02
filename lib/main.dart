@@ -13,6 +13,9 @@ class FinanceApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
-      child: MaterialApp(title: 'Flutter Demo', home: Scaffold()));
+      builder: (context, child) {
+        return  MaterialApp(title: 'Flutter Demo', home:child );
+      },
+      child:Scaffold());
   }
 }
