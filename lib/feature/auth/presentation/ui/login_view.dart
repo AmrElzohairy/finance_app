@@ -1,8 +1,6 @@
 import 'package:finance_app/core/widgets/back_button.dart';
 import 'package:finance_app/core/widgets/spacing.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../../core/widgets/custom_text_field.dart';
 import '../../../../core/widgets/primary_button.dart';
 import 'widgets/or_login_with.dart';
