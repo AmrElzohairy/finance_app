@@ -1,3 +1,4 @@
+import 'package:finance_app/core/routing/ongenerate_route.dart';
 import 'package:finance_app/feature/onBoarding/ui/onboarding_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,8 +16,14 @@ class FinanceApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       builder: (context, child) {
-        return  MaterialApp(title: 'Flutter Demo', home:child );
+        return MaterialApp(
+          title: 'Flutter Demo',
+          onGenerateRoute: onGenerateRoute,
+          initialRoute: OnboardingView.routeName,
+          home: child,
+        );
       },
-      child:OnboardingView());
+      child: OnboardingView(),
+    );
   }
 }
