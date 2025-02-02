@@ -76,8 +76,6 @@ class _OtpViewState extends State<OtpView> {
                     ),
                     borderWidth: 1,
                   ),
-                  onChanged: (value) {},
-                  onCompleted: (value) {},
                 ),
                 const HeightSpace(38),
                 PrimayButtonWidget(buttonText: "Verify", onPress: () {}),
